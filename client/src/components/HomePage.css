@@ -1,0 +1,917 @@
+/* HomePage.css */
+
+/* General Body Styling (Example: Apply to the entire app) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+#wrapper {
+    overflow: hidden; /* Prevent unwanted scrolling */
+}
+
+/* Navigation */
+.nav-wrapper {
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0; /* Add vertical padding */
+}
+
+.navbar {
+    background-color: transparent;
+    margin-bottom: 0;            /* Remove default bottom margin */
+    display: flex;                /* Enable flexbox */
+    align-items: center;          /* Vertically center content */
+    justify-content: space-between;  /* Distribute items horizontally */
+    padding: 5px 15px;             /* Reduced vertical padding and horizontal padding */
+}
+
+.navbar-brand {
+    float: none;                /* Remove default float */
+    padding: 5px 0;               /* Adjust vertical padding if needed */
+    display: inline-block;      /* Make it inline */
+}
+
+.navbar-brand img {
+    max-height: 60px;            /* Reduce logo size */
+    width: auto;               /* Maintain aspect ratio */
+}
+
+.logo home-logo {
+    padding: 10;                /* Reset padding */
+    display: inline-block;
+    vertical-align: middle;     /* Vertically align with the content */
+}
+
+.logo home-logo img {
+    max-width: 300px;           /* Adjust as needed */
+    height: 300px;
+}
+
+.menuCenter {
+    padding: 0;                /* Remove all the padding */
+    display: block;                 /* Display in a row */
+    list-style: none;           /* Remove bullet points */
+    white-space: nowrap;         /* Keep items on one line */
+}
+
+/*Menu items */
+.menuCenter li {
+ display: inline-block;        /* Display horizontally */
+    margin: 0 10px;             /* Add spacing */
+    line-height: normal;        /* reset default Line Height */
+
+}
+ /*For hover effects*/
+ .menuCenter li a:hover {
+   background-color: white;
+   color: #000 !important;
+
+}
+
+.menuCenter li a {
+  color: #800000; /* Red color */
+font-weight: bold; /* Bold weight */
+ text-decoration: none; /* Remove underline */
+   }
+
+.navbar-collapse {
+    flex-grow: 1;                  /* take Remaining Space */
+    display: flex;                    /* use Flexbox for Nav items*/
+    justify-content: flex-end;      /* right-align the item */
+}
+
+/*This menu is replaced*/
+.nav.navbar-nav {
+    display: inline;         /* Set the text in inline */
+    justify-content: end;         /* To set it to right */
+
+}
+
+/* Menu items */
+.menuCenter li {
+    display: inline-block;        /* Display horizontally */
+    margin: 0 10px;             /* Add spacing */
+     line-height: normal;          /* reset default Line Height */
+     
+}
+.menuCenter li a {
+    text-decoration: none;    /* Remove underlines */
+    color: black;              /* Make the text Black */
+    font-weight: bold;        /* Make the text bold */
+}
+/* Carousel */
+.carousel {
+    margin-bottom: 20px;
+    text-align: center;      /* Center images and captions */
+}
+
+.carousel-caption {
+    /* Styles for carousel captions */
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Slider Footer */
+.slider_footer {
+    display: flex;
+    background-color: #333;             /* Setting up the back colour */
+    color: #fff;                  /* Setting the front Colour */
+    padding: 10px 0;
+    justify-content: space-between;    /* Puts content to different sides */
+    text-align: center;              /* Default to center, override if needed */
+}
+
+.slider_footer .row {
+    display: flex;                    /* Use Flexbox */
+    justify-content: center;        /* Center items horizontally */
+    align-items: center;            /* Center items vertically (if needed) */
+}
+
+.slider_footer .col-sm-3 {
+    display: flex;                    /* Use Flexbox for inner content */
+    justify-content: center;        /* Horizontally center */
+    align-items: center;            /* Vertically center */
+    text-align: center;              /* Center-align the text */
+    flex: 1;                  /* All segments have same column */
+}
+
+.slider_footer .col1 {
+    background-color: #E9D649;
+    padding: 20px;
+    padding-right: 110px;
+    padding-left: 60px;
+}
+
+.slider_footer .col1 p {
+    /* Text adjustments in the first column */
+    font-size: 1em;                  /* Adjust font size */
+    color: black;                  /* Changing the text colour to black */
+}
+
+.slider_footer .col2 {
+    /* Styles for the second column if necessary */
+    font-size: 1.2em;
+    color: black;                  /* Changing the text colour to black */
+}
+
+ /* New style for the background image */
+.slider_footer .slide-txt{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.slider_footer .slide-txt h2 {
+    margin-bottom: 25px;
+    color: white; /* Change heading to white */
+
+}
+
+.col-sm-6.slide-txt {
+    flex: 2;
+    background-color: #008000; /* Green color */
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.col-sm-3.centerAlign {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center;
+    flex-direction: column;
+    background-color: #E9D649; /* Yellow color */
+    color: #000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Home Container */
+.homeContainer {
+    padding: 20px 0;
+    text-align: center;     /* Add this line: Center content */
+}
+
+.logo-home img {
+    max-width: 200px;
+    height: auto;
+}
+
+.uttar-heading {
+    color: #8b0000;
+    font-weight: bold;
+}
+
+/* Download Section */
+.download-section {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    background-image: url('images/image1.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.download-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey with 50% opacity */
+    mix-blend-mode: color; /* Or try 'luminosity', 'saturation', etc. */
+    z-index: 0;
+}
+
+.download-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+.download-section h2 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+.download-btn{
+    /* Make texts to match instructions - White for text , 8b0000  - Dark */
+   color: #FFF;
+   /* Underline will be there until hover, so remove the underline*/
+    text-decoration: none;
+    margin: 5px;
+  width: auto;
+  height: auto;
+  min-width: 350px;
+  min-height: 60px;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: white;
+  color: #8b0000; /* setting new font colour */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(15, 2, 2, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+.download-btn:hover {
+    background-color: #120b0b;
+}
+
+/* Registration Container */
+.registration-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #8b0000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url('images/image1.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey with 50% opacity */
+    mix-blend-mode: color; /* Or try 'luminosity', 'saturation', etc. */
+    z-index: 0;
+}
+
+.registration-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.register-btn{
+    /* Make texts to match instructions - White for text , 8b0000  - Dark */
+   color: #8b0000;
+   background-color: white;
+   /* Underline will be there until hover, so remove the underline*/
+    text-decoration: none;
+    margin: 5px;
+  width: auto;
+  height: auto;
+  min-width: 350px;
+  min-height: 60px;
+  max-width: 200px;
+  max-height: 200px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(15, 2, 2, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-break: break-word;
+}
+
+.register-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Subcity */
+.subcity {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subcity img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Section 1 */
+.section1 {
+    /* Styles for Section 1 */
+    text-align: center;
+}
+
+/* Section 2 */
+.section2 {
+    background-color: #a0522d;        /* Brown background color */
+     text-align: center;            /* Center all text*/
+    color: white;
+
+    padding: 10px 0;                  /* Add some space, you may set this to high value or test since layout is not a clear cut at this step */
+}
+
+.section2 .container {
+    width: 100%;                      /* Take the full width of section 2 */
+    padding: 0 15px;                  /* Some horizontal padding */
+    margin: 0 auto;                     /* Center the container itself */
+
+}
+
+.section2 .row {
+ display: flex; /* Enable flexbox for horizontal layout */
+      flex-wrap: wrap;   /* Adjust alignment as needed */
+
+justify-content: center;
+
+}
+
+.section2 .list_tick {
+    list-style: none;           /* Remove bullet points */
+    padding: 0;                  /* Remove default padding */
+    display: flex;
+    flex-wrap: wrap;
+
+  justify-content: center;   /* Make to centre! */
+}
+
+.section2 .list_tick li {
+    margin: 5px 15px;             /* Add spacing around items */
+    text-align: left;              /* Make text left to fit what you want */
+     color:white;
+
+}
+/* To match the font and layout*/
+.list_tick li img {
+   /* match for the layout*/
+    vertical-align: middle;
+    margin-left: 5px
+}
+/* Section 3 */
+/* Section 3 */
+.section3 {
+    background-color: #8b4513; 
+color: white; 
+padding: 20px 0;
+text-align: center; 
+margin-bottom: 30px
+}
+
+.section3 .container {
+    width: 100%;                 /* Take full container width */
+    padding: 0 15px;
+    margin: 0 auto;                /* Center horizontally */
+}
+
+.section3 .col-sm-12 {
+    /* Center the content in the column */
+    text-align: center;
+}
+
+.section3 .user_benefit {
+    /* If the container is not taking full space */
+    display: inline-block;          /* Make it inline block */
+    text-align: left;  					  /* Text will left */
+}
+
+.section3 .heds h3 {
+    font-size: 1.5em;
+    color: white;   /*Set white*/
+    font-weight: bold;
+}
+
+.section3 .cnts {
+    text-align: left;             /* Default align left */
+}
+
+.section3 .bullets {
+    list-style: none;            /* Remove bullets */
+    padding: 0;                  /* Remove default padding */
+    display: inline-block;       /* Take only the minimum for text container */
+}
+
+.section3 .bullets li {
+    font-size: 1em;
+        font-size: 16px;
+    text-align: left;
+}
+
+/*section 4*/
+.section4 {
+    /* Styles for Section 4 */
+    text-align: center;
+    /* New Background styles */
+    background-image: url('images/layout.png'); /* Replace with your image path */
+    background-size: cover;        /* Cover the entire container */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Prevent repetition */
+    padding: 20px;                /* You can change the Padding for this text box */
+    position: relative;           /* It may depend on what you want*/
+}
+
+/* new layout to be rendered the same structure with the image */
+.section4 .container-fluid {
+    display: flex;           /* Use Flexbox to arrange sections horizontally */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px
+}
+
+.section4 .bg_lay {
+    display: flex;           /* Use Flexbox to arrange sections horizontally */
+    flex: 3;               /* Occupies 3/4 of the available space */
+}
+
+.section4 .col-sm-6 {
+    flex: 1;                      /* Each side occupy half of the area */
+    padding: 20px;
+    text-align: center;          /* Center the content */
+}
+.section4 {
+    /* Styles for Section 4 */
+    text-align: center;
+    background-image: url('images/layout.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: relative;
+}
+
+/*Make the parts equal center*/
+.section4 .bg_lay {
+    display: flex;
+    /*flex-direction: column; */
+   /*align-items: center; If any conflicts occur, use other alignment options like flex-start or flex-end. */
+   justify-content: space-around; /* Distribute columns evenly */
+}
+.section4 .col-sm-6 {
+    text-align: center;      /* Center text */
+    
+}
+.section4 .circle {
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px auto 10px; /* Added top margin - adjust value as needed */
+     line-height: 100px; /* Vertically center the text within the circle */
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+}
+
+.section4 .cir_cnt p {
+    font-size: 1em;
+    color: black;             /* Make it black */
+    font-weight: bold;       /* Make it bold */
+    text-align: center;   /*Center the text */
+}
+
+.section4 .box1,
+.section4 .box2,
+.section4 .box3 {
+    padding: 10px;             /*Smaller padding */
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.8em;          /* Reduced font size */
+}
+
+.section4 .box1 {
+    background-color: #8b4513;       /* Brown Color for Box 1 */
+}
+
+.section4 .box2 {
+    background-color: #a0522d;        /* Another Brownish color for Box 2 */
+}
+
+.section4 .box3 {
+    background-color: #b8860b;       /* Some color to show it to 3Box for the Text */
+}
+
+/* Section 5 */
+.section5 {
+    /* Styles for Section 5 */
+    text-align: center;
+    padding: 20px 0; 
+}
+
+/* News Section */
+.news-section {
+    padding: 20px 0;          /* Adjust padding as needed */
+}
+
+.news-section .container {
+    width: 100%;             /* Use full width */
+    max-width: 1200px;      /* Limit maximum width if needed */
+    margin: 0 auto;          /* Center the container */
+    padding: 0 15px;         /* Add some side padding */
+    text-align: center;
+}
+
+.news-section .row {
+    display: flex;              /* Enable flexbox layout */
+    flex-wrap: wrap;          /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+.news-section .col-sm-6 {
+    flex: 0 0 calc(50% - 20px); /* Two columns, allow for some spacing */
+    max-width: calc(50% - 20px);/* Two columns, allow for some spacing */
+    padding: 5px;
+    box-sizing: border-box;    /* Include padding in the element's total width and height */
+    margin-bottom: 20px;        /* Add some vertical space */
+
+}
+/*For smaller screens display them in a single column*/
+@media (max-width: 768px) {
+    .news-section .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.news-section .news {
+    text-align: center;      /* Center images if needed */
+}
+
+.news-section .news img {
+    width: 100%;             /* Take the full width of its parent */
+    height: auto;            /* Maintain aspect ratio */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 5px;     /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add shadow */
+}
+
+.news-section .news a {
+    display: block;           /* Make the link fill the entire container */
+    text-decoration: none;    /* Remove underlines */
+    color: inherit;           /* Use parent's text color */
+}
+
+.news-section .news a:hover {
+    opacity: 0.8;            /* Add a hover effect */
+}
+
+.footer {
+    background-color: #333;              /* Dark background color */
+    color: #ddd;                      /* Light text color */
+    padding: 20px 0;
+    text-align: center;               /* Center everything */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer h1,
+.footer h3,
+.footer h5 {
+    color: #ff0;
+}
+
+.footer .calling p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Styles for Site Office and Ghaziabad Office */
+.footer .middle-footer {
+    display: flex;                     /* Align the boxes  */
+    justify-content: center;  		   /*Make boxes in a row */
+    align-items: center;              
+}
+
+.footer .ad1 {
+    /* Styles for each Address section (Site Office/Ghaziabad) */
+    text-align: left;                  /* Left-align content inside */
+}
+
+.footer .ad1 h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.footer .ad1 p {
+    font-size: 0.9em;                 /* Smaller font size for address */
+}
+
+/* Styles for the Download Prospectus Section */
+.footer .download_sec {
+    /* ... Other Download Section styles if needed */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;         /* Center the download button */
+}
+
+.footer .download {
+    border: 1px solid #ddd;            /* Box border */
+    padding: 10px 20px;
+    border-radius: 5px;               /* Optional: Rounded corners */
+    display: inline-block;            /* Take up only necessary space */
+    margin: 0 auto;                   /* Center within its column */
+}
+
+.footer .download h5 {
+    /* Styles for the "Download Complete Prospectus" text */
+}
+
+.footer .download a {
+    /* For the link - Remove underline, set color */
+    color: #ddd;
+    text-decoration: none;
+    display: inline-flex;                /* Align icon and text */
+    align-items: center;                  /* Vertical center alignment */
+}
+
+.footer .download img {
+    /* Adjust the size of the download icon */
+    max-width: 24px;
+    height: auto;
+    margin-left: 5px;             /* Space icon and text */
+}
+
+/* Footer */
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 20px 0;
+    text-align: center;
+	   position: relative
+}
+
+.footer h1,
+.footer h3,
+.footer h5 {
+    color: #ff0;
+}
+
+.footer .calling p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Styles for Site Office and Ghaziabad Office */
+.footer .middle-footer {
+    display: flex;                     /* Align the boxes  */
+    justify-content: center;  		   /*Make boxes in a row */
+    align-items: center;              
+}
+
+.footer .ad1 {
+    /* Styles for each Address section (Site Office/Ghaziabad) */
+    text-align: left;                  /* Left-align content inside */
+}
+
+.footer .ad1 h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.footer .ad1 p {
+    font-size: 0.9em;                 /* Smaller font size for address */
+}
+
+/* Styles for the Download Prospectus Section */
+.footer .download_sec {
+    /* ... Other Download Section styles if needed */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;         /* Center the download button */
+}
+
+.footer .download {
+    /* Styles for the actual Download link area */
+    
+}
+
+.footer .download h5 {
+    /* Styles for the "Download Complete Prospectus" text */
+}
+
+.footer .download a {
+    /* For the link - Remove underline, set color */
+    color: #ddd;
+    text-decoration: none;
+    display: inline-flex;                /* Align icon and text */
+    align-items: center;                  /* Vertical center alignment */
+}
+
+.footer .download img {
+    /* Adjust the size of the download icon */
+    max-width: 24px;
+    height: auto;
+    margin-left: 5px;             /* Space icon and text */
+}
+
+/* Styles for Copyright Section */
+.footer .copy {
+    /* For the very bottom copyright text */
+    background-color: #333;   /* Same colour as Footer, so we can delete that line*/
+    color: white;
+    position: absolute;
+    bottom:0;         /*stick the layout to the bottom */
+    width: 100%;      /*take the whole */
+    text-align: center;        /* Center the text */
+
+}
+
+.footer .copy p {
+    font-size: 0.8em;
+}
+
+/*General properties*/
+.footer .copy a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer .download_sec .ad1,
+.footer .download_sec .add {
+ justify-content: center;          /*All set to be in the center. */
+ 
+}
+.footer .download_sec.ad1 add{
+  text-align: center;
+
+}
+
+.footer .download_sec h3{
+    color: white;
+ text-align: center;  /*All set to be in the center. */
+}
+/* Image Slider (Basic Styling for Stacking Images) */
+.image-slider1 {
+    width: 100%;
+    margin: 20px auto;
+    text-align: center; /* Center images horizontally */
+}
+
+.image-slider1 .slide {
+    display: inline-block; /* Display images in a row */
+    margin: 0 10px;      /* Add some horizontal spacing */
+}
+
+.image-slider1 .slide img {
+    max-width: 200px;    /* Adjust as needed */
+    max-height: 50px;
+    height: auto;       /* Maintain aspect ratio */
+    border-radius: 5px;   /* Rounded corners */
+}
+
+/* Image Slider (Basic Styling for Stacking Images) */
+/* Image Slider (Basic Styling for Stacking Images) */
+.image-slider {
+    position: relative;
+    width: 100%;
+    margin: 20px auto; /* This centers the entire slider */
+    text-align: center;   /* Center images if they are smaller than their container */
+    overflow: hidden;  
+    max-width: 100%;/*Set to maximum */
+}
+
+.image-slider img {
+    width: 100%; /* Fill the width of the slider */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+      transition: transform 0.5s ease-in-out;
+}
+
+/* Slides container */
+.image-slider .slides {
+    position: relative;
+    width: 100%;
+    margin: 20px auto; /* This centers the entire slider */
+    text-align: center;   /* Center images if they are smaller than their container */
+    overflow: hidden;
+    white-space: nowrap; /* Prevent line breaks */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Adjust image */
+.image-slider .slides img{
+     width: 100%;
+     height: auto;
+     display: inline-block; /* Images placed horizontally */
+}
+  
+  /* Arrow Styles */
+  .slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure the arrows are on top of the images */
+  }
+  
+  .slide-arrow.prev {
+    left: 10px; /* Distance from the left edge */
+  }
+  
+  .slide-arrow.next {
+    right: 10px; /* Distance from the right edge */
+  }
+  
+  /* Arrow Styles */
+  .slide-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark semi-transparent background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    z-index: 10; /* Ensure the arrows are on top of the images */
+  }
+  
+  .slide-arrow.prev {
+    left: 10px; /* Distance from the left edge */
+  }
+  
+  .slide-arrow.next {
+    right: 10px; /* Distance from the right edge */
+  }
+
+.navbar-logo {
+   max-width: 100px;    /* Adjust as needed */
+   height: auto;
+}
